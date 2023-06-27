@@ -1,0 +1,21 @@
+https://practice.geeksforgeeks.org/problems/check-for-subsequence4930/1
+
+bool isSubSequence(string A, string B) 
+    {
+        int i=0;
+        int j=0;
+        while(i<B.size()&&j<A.size()){
+            if(B[i]==A[j]){
+                i++;
+                j++;
+            }
+            else{
+                i++;
+            }
+        }
+        if(j==A.size())
+        return true;
+        else
+        return false;
+        
+    }
